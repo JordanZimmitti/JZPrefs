@@ -17,8 +17,7 @@ Add these repositories to the android part of your app build.gradle
     
 Add This line of code to the dependencies in your build.gradle
 
-    implementation 'com.github.JordanZimmitti:JZNightMode:x.x.x'
-[![](https://jitpack.io/v/JordanZimmitti/JZNightMode.svg)](https://jitpack.io/#JordanZimmitti/JZNightMode)
+    implementation 'com.github.JordanZimmitti:JZPrefs:1.0.0'
 
 #### Saves A Shared Preference
 
