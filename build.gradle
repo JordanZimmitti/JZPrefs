@@ -1,0 +1,34 @@
+// Top Level Build Script//
+buildscript {
+
+    // Top Level Dependency Versions//
+    ext.gradle_version = '3.4.2'
+    ext.kotlin_version = '1.3.50'
+
+    // Top Level Repositories//
+    repositories {
+        google()
+        jcenter()
+    }
+
+    // Top Level Dependencies//
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+// Top Level Project Script//
+allprojects {
+
+    // Project Repositories//
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+// Task That Cleans The Project//
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
